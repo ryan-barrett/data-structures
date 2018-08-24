@@ -8,6 +8,7 @@ public class LabOne {
 
     }
 
+    //find the sum of a series
     public static void calcSeries(int series) {
         int sum = 0;
 
@@ -18,6 +19,7 @@ public class LabOne {
         System.out.println("series sum: " + sum);
     }
 
+    //find the largest and smallest values in an array of ints
     public static void largestSmallest(int[] arr) {
         int largest = 0;
         int smallest = arr[0];
