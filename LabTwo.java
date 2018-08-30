@@ -12,7 +12,7 @@ public class LabTwo {
         linearSearch(newArrTwo, 5); 
     }  
     
-    
+    //add and remove elements from an array
     public static void modifyArray(ArrayList<Integer> arr, int toBeAdded) {
        arr.add(toBeAdded);
        System.out.println(toBeAdded + " added to array"+ arr);
@@ -20,6 +20,7 @@ public class LabTwo {
        System.out.println("First element removed from array. Current array: " + arr);   
     }
     
+    //search for a target value and print the index of the value
     public static void linearSearch(int[] arr, int targetValue) {
         int foundIndex = -1;
         
