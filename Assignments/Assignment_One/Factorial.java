@@ -12,11 +12,10 @@ public class Factorial {
     }
 
     public static int doFactorial(int factorialNum) {
-        int factorial = factorialNum;
-
-        for (int i = 1; factorialNum > i; i++) {
-            factorial *= i;
+        if (factorialNum <= 1) {
+            return 1;
+        } else {
+            return factorialNum * doFactorial(factorialNum - 1);
         }
-        return factorial;
     }
 }
