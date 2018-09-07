@@ -8,6 +8,7 @@ public class PrimeNumbers {
 
         System.out.println("Enter interval one: ");
         int intervalOne = myScan.nextInt();
+        
         System.out.println("Enter interval two: ");
         int intervalTwo = myScan.nextInt();
 

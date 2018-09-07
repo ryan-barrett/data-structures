@@ -7,6 +7,7 @@ public class SumOfSeries {
 
         System.out.println("Enter number to sum: ");
         int sumThis = myScan.nextInt();
+        
         addSum(sumThis);
         myScan.close();
     }

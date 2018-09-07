@@ -7,6 +7,7 @@ public class Factorial {
 
         System.out.println("Enter number: ");
         int factorialNum = myScan.nextInt();
+        
         System.out.println("Factorial of given number: " + doFactorial(factorialNum));
         myScan.close();
     }

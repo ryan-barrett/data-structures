@@ -15,6 +15,7 @@ public class StudentInfo {
         System.out.println("Enter student's name, ID, Address, GPA, and phone number: ");
         String textToAppend = myScan.nextLine();
 
+        //append given info to target file
         try {
             Files.write(Paths.get(filePath), textToAppend.getBytes(), StandardOpenOption.APPEND);
         } catch (IOException e) {
@@ -22,6 +23,7 @@ public class StudentInfo {
         }
         myScan.close();
 
+        //read each line and output text
         try {
             Scanner input = new Scanner(new File(filePath));
             while (input.hasNextLine()) {

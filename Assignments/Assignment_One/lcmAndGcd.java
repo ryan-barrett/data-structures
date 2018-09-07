@@ -7,6 +7,7 @@ public class lcmAndGcd {
 
         System.out.println("Enter first number: ");
         int num1 = myScan.nextInt();
+        
         System.out.println("Enter second number: ");
         int num2 = myScan.nextInt();
 

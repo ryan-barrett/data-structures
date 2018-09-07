@@ -8,6 +8,7 @@ public class GenerateFibonacci {
 
         System.out.println("Enter starting number: ");
         int startSeries = myScan.nextInt();
+        
         System.out.println("Enter ending number: ");
         int endSeries = myScan.nextInt();
 

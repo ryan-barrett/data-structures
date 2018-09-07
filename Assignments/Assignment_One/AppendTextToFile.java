@@ -11,6 +11,7 @@ public class AppendTextToFile {
 
         System.out.println("Enter file path: ");
         String filePath = myScan.nextLine();
+        
         System.out.println("Enter text to append: ");
         String textToAppend = myScan.nextLine();
 
