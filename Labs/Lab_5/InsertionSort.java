@@ -11,6 +11,7 @@ public class InsertionSort {
             System.out.println("Enter int " + i + " of 6");
             toBeSearched[i] = myScan.nextInt();
         }
+        myScan.close();
         System.out.println("Original array: " + Arrays.toString(toBeSearched));
         insertionSort(toBeSearched);
     
