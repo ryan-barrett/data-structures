@@ -1,14 +1,12 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.Queue;
 
 public class stackAndQueue {
 
     public static void main(String[] args) {
         ArrayList<Integer> newArr = new ArrayList<Integer>(Arrays.asList(5, 7, 2, 1, 2));
         LinkedList<Integer> myList = new LinkedList<Integer>();
-        Queue<Integer> myQueue = new LinkedList<>();
 
         arrayBasedStack(newArr);
         arrayBasedQueue(newArr);
