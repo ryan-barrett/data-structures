@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class BinarySearchTree {
 
     public static void main(String[] args) {
@@ -11,6 +13,9 @@ public class BinarySearchTree {
             int temp = myScan.nextInt();
             findSpot(root, temp);
         }
+        myScan.close();
+
+        System.out.println("Tree traversal: [" + preOrderTraversalRight(root) + preOrderTraversalLeft(root) + "]");
     }
 
     public static void findSpot(Node theNode, int toBeInserted) {
@@ -27,6 +32,26 @@ public class BinarySearchTree {
                 findSpot(theNode.left, toBeInserted);
             }
         }
+    }
+
+    public static ArrayList preOrderTraversalRight(Node currentNode) {
+        ArrayList<Node> newArr = new ArrayList<Node>();
+
+        if (currentNode.right != null) {
+            newArr.add(currentNode.right);
+            preOrderTraversalRight(currentNode.right);
+        }
+        return newArr;
+    }
+
+    public static ArrayList preOrderTraversalLeft(Node currentNode) {
+        ArrayList<Node> newArr = new ArrayList<Node>();
+
+        if (currentNode.left != null) {
+            newArr.add(currentNode.left);
+            preOrderTraversalRight(currentNode.left);
+        }
+        return newArr;
     }
 }
 
